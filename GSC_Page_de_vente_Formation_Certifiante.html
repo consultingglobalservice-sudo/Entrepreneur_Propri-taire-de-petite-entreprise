@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Formation certifiante Entrepreneur / Propriétaire de petite entreprise | GSC Business Center</title>
+<meta name="description" content="16 modules, une méthode en 10 étapes, 11 outils Excel prêts à l'emploi et une soutenance devant jury : le programme certifiant de GSC Business Center pour structurer, vendre, financer et faire grandir votre petite entreprise. En présentiel ou à distance.">
+<meta name="theme-color" content="#142238">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#142238;
+  --gold:#B8934A;
+  --gold-hi:#D9B872;
+  --gold-ink:#7C5D20;
+  --bg:#F3F5F9;
+  --surface:#FFFFFF;
+  --ink:#142238;
+  --muted:#46546D;
+  --line:#D9DFEA;
+  --dark:#142238;
+  --dark-2:#1C3050;
+  --dark-deep:#0C1727;
+  --on-dark:#F2F5FA;
+  --on-dark-muted:#B4BFD2;
+  --dark-line:rgba(255,255,255,.14);
+  --ok:#1E7A55; --ok-bg:#DDF1E7;
+  --warn:#9A5B00; --warn-bg:#FBE9CC;
+  --bad:#B03A2E;
+  --gantt:#8C99B0;
+  --radius:16px;
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1220; --surface:#111F35; --ink:#EEF2F8; --muted:#AAB6CB; --line:#233651;
+    --gold-ink:#D9B872;
+    --dark:#0F1D33; --dark-2:#16294A; --dark-deep:#070E19;
+    --ok-bg:#12382B; --warn-bg:#3D2B0B; --ok:#63D2A0; --warn:#F0B255; --bad:#F0796C;
+    --gantt:#5D6E8C;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1220; --surface:#111F35; --ink:#EEF2F8; --muted:#AAB6CB; --line:#233651;
+  --gold-ink:#D9B872;
+  --dark:#0F1D33; --dark-2:#16294A; --dark-deep:#070E19;
+  --ok-bg:#12382B; --warn-bg:#3D2B0B; --ok:#63D2A0; --warn:#F0B255; --bad:#F0796C;
+  --gantt:#5D6E8C;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.14;margin:0;letter-spacing:-.01em;font-optical-sizing:auto}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold-hi);color:var(--navy);padding:10px 14px;border-radius:8px;z-index:100;font-weight:600}
+.skip:focus{left:12px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* ----- boutons ----- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 1rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-gold{background:var(--gold-hi);color:var(--navy)}
+.btn-gold:hover{background:#E6C989;transform:translateY(-1px)}
+.btn-line{border-color:var(--dark-line);color:var(--on-dark);background:transparent}
+.btn-line:hover{border-color:var(--gold-hi);color:var(--gold-hi)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:#1F3556}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--gold)}
+
+/* ----- en-tête ----- */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--dark);color:var(--on-dark);border-bottom:1px solid var(--dark-line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{display:grid;place-items:center;width:44px;height:44px;border:2px solid var(--gold);border-radius:12px;font:700 1.05rem/1 var(--serif);color:var(--gold-hi);letter-spacing:.02em}
+.logo-text{display:flex;flex-direction:column;font:600 1rem/1.15 var(--sans)}
+.logo-text small{font-weight:400;font-size:.75rem;color:var(--on-dark-muted)}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{text-decoration:none;font-size:.95rem;color:var(--on-dark-muted)}
+.nav a:hover{color:var(--gold-hi)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:.95rem;color:var(--navy)}
+.nav .btn:hover{color:var(--navy)}
+.menu-btn{display:none;background:transparent;border:1px solid var(--dark-line);color:var(--on-dark);border-radius:10px;min-height:44px;padding:0 14px;font:600 .95rem var(--sans);cursor:pointer}
+
+/* ----- héros ----- */
+.hero{background:var(--dark);color:var(--on-dark)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(48px,7vw,96px) clamp(40px,6vw,72px)}
+.hero-kicker{color:var(--gold-hi);font-weight:600;font-size:1rem;margin-bottom:18px}
+.hero h1{font-size:clamp(2.35rem,5.4vw,4.1rem);font-weight:700;max-width:16ch}
+.lead{margin-top:22px;font-size:1.15rem;color:var(--on-dark-muted);max-width:56ch}
+.lead strong{color:var(--on-dark);font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.fine{margin-top:14px;font-size:.92rem;color:var(--on-dark-muted);max-width:52ch}
+.ticks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;margin-top:30px;max-width:520px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;color:var(--on-dark)}
+.ticks svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--gold-hi)}
+
+/* tableau de bord d'exemple */
+.board{margin:0;background:var(--dark-2);border:1px solid var(--dark-line);border-radius:20px;padding:22px 22px 18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.board-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.board-head b{font:600 1.15rem/1.2 var(--serif)}
+.board-head span{font-size:.85rem;color:var(--on-dark-muted)}
+.brow{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--dark-line);animation:enter .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+.brow small{display:block;font-size:.8rem;color:var(--on-dark-muted)}
+.brow .lab{font-weight:600;font-size:.98rem}
+.brow .val{font:700 1.35rem/1 var(--serif);text-align:right}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:.8rem;font-weight:600;padding:5px 11px;border-radius:999px;white-space:nowrap}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.pill.ok{background:#DDF1E7;color:#14573C}
+.pill.warn{background:#FBE9CC;color:#7A4700}
+.board-note{margin-top:12px;font-size:.82rem;color:var(--on-dark-muted);border-top:1px solid var(--dark-line);padding-top:12px}
+@keyframes enter{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+
+.stats{background:var(--dark-2);border-top:1px solid var(--dark-line)}
+.stats-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0}
+.stat{padding:22px 12px;text-align:center;border-left:1px solid var(--dark-line)}
+.stat:first-child{border-left:0}
+.stat strong{display:block;font:700 clamp(1.7rem,3vw,2.35rem)/1.05 var(--serif);color:var(--gold-hi)}
+.stat span{display:block;margin-top:6px;font-size:.88rem;color:var(--on-dark-muted)}
+
+/* ----- sections ----- */
+.section{padding-block:clamp(64px,9vw,112px)}
+.s-surface{background:var(--surface)}
+.s-dark{background:var(--dark);color:var(--on-dark)}
+.h2{font-size:clamp(1.9rem,3.6vw,2.85rem);max-width:22ch}
+.sub{margin-top:16px;color:var(--muted);max-width:60ch}
+.s-dark .sub{color:var(--on-dark-muted)}
+.split{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,88px);align-items:start}
+.split-head{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px)}
+
+/* constats */
+.pains li{padding:22px 0 22px 26px;border-top:1px solid var(--line);position:relative;font:400 clamp(1.12rem,2vw,1.4rem)/1.35 var(--serif)}
+.pains li:last-child{border-bottom:1px solid var(--line)}
+.pains li::before{content:"";position:absolute;left:0;top:30px;width:12px;height:2px;background:var(--gold)}
+.pivot{margin-top:28px;font-size:1.1rem;max-width:52ch}
+.pivot strong{font-weight:600}
+
+/* méthode */
+.phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:44px;border-top:2px solid var(--gold)}
+.phase{padding:22px 22px 6px 0}
+.phase + .phase{padding-left:22px;border-left:1px solid var(--dark-line)}
+.phase h3{font-size:1.25rem;color:var(--gold-hi)}
+.phase p{font-size:.9rem;color:var(--on-dark-muted);margin-top:4px}
+.steps{margin-top:18px}
+.steps li{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-top:1px solid var(--dark-line);font-size:.97rem}
+.steps b{font:700 1.15rem/1 var(--serif);color:var(--gold-hi);min-width:1.6em}
+.method-note{margin-top:34px;font-size:1.05rem;color:var(--on-dark-muted);max-width:66ch}
+.method-note strong{color:var(--on-dark);font-weight:600}
+
+/* programme */
+.bloc{margin-top:52px}
+.bloc-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 24px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.bloc-head h3{font-size:clamp(1.3rem,2.3vw,1.7rem)}
+.bloc-head p{color:var(--muted);font-size:.95rem}
+.mod{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:8px 20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.mod-n{font:700 2rem/1 var(--serif);color:var(--gold-ink)}
+.mod h4{font-size:1.2rem;font-weight:600}
+.mod p{margin-top:6px;color:var(--muted);font-size:.98rem;max-width:64ch}
+.mod-m{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-size:.88rem;color:var(--muted);white-space:nowrap}
+.mod-m b{font-weight:600;color:var(--ink)}
+
+/* outils */
+.tools{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);align-items:center}
+.toollist{margin-top:26px;display:grid;grid-template-columns:1fr;gap:0}
+.toollist li{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:.98rem}
+.toollist svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--gold-ink)}
+.toollist b{font-weight:600}
+.toollist span{color:var(--muted)}
+.figure{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:20px}
+.figure figcaption{margin-top:12px;font-size:.88rem;color:var(--muted)}
+.gantt{width:100%;height:auto;display:block}
+.g-grid{stroke:var(--line);stroke-width:1}
+.g-tick,.g-lab{fill:var(--muted);font:500 11px var(--sans)}
+.g-bar{fill:var(--gantt)}
+.g-crit{fill:var(--bad)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:.85rem;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:8px;border-radius:3px;margin-right:6px;vertical-align:middle}
+.templates{margin-top:24px;font-size:.98rem;color:var(--muted);max-width:60ch}
+
+/* fil rouge Awa */
+.awa{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,6vw,80px);align-items:start}
+.badge{display:inline-block;margin-top:20px;padding:6px 14px;border:1px solid var(--gold-hi);color:var(--gold-hi);border-radius:999px;font-size:.85rem;font-weight:600}
+.timeline{position:relative;padding-left:30px;border-left:2px solid var(--gold)}
+.timeline li{position:relative;padding:0 0 26px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-38px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--dark);border:3px solid var(--gold-hi)}
+.timeline b{display:block;font:600 .9rem var(--sans);color:var(--gold-hi);margin-bottom:2px}
+.timeline p{color:var(--on-dark)}
+.timeline em{font-style:normal;font-weight:600;color:var(--gold-hi)}
+.awa-note{margin-top:26px;font-size:.9rem;color:var(--on-dark-muted);max-width:56ch}
+
+/* formats */
+.formats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:40px}
+.format{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px 30px 26px}
+.format h3{font-size:1.55rem}
+.format .tag{margin-top:6px;color:var(--gold-ink);font-weight:600}
+.format ul{margin-top:18px}
+.format li,.list li{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:.98rem}
+.format li svg,.list li svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--gold-ink)}
+.same{margin-top:26px;padding:18px 22px;border-left:4px solid var(--gold);background:var(--surface);border-radius:0 var(--radius) var(--radius) 0;font-weight:500}
+
+/* certification */
+.path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:44px;counter-reset:p}
+.path li{position:relative;padding:58px 18px 0 0}
+.path li::before{counter-increment:p;content:counter(p);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:var(--gold-hi);display:grid;place-items:center;font:700 1.1rem var(--serif)}
+.path li::after{content:"";position:absolute;left:48px;right:8px;top:19px;height:2px;background:var(--gold)}
+.path li:last-child::after{display:none}
+.path b{display:block;font:600 1.05rem/1.25 var(--serif);margin-bottom:6px}
+.path span{font-size:.93rem;color:var(--muted)}
+.cert-note{margin-top:34px;padding:20px 24px;background:var(--bg);border-radius:var(--radius);font-size:.98rem;max-width:74ch}
+
+/* pour qui */
+.who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,72px);margin-top:36px}
+.who h3{font-size:1.4rem;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.who .no h3{border-color:var(--line)}
+.who .no li svg{color:var(--muted)}
+
+/* pourquoi GSC */
+.why{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(28px,5vw,72px);margin-top:40px}
+.why div{padding:22px 0;border-top:1px solid var(--dark-line)}
+.why h3{font-size:1.3rem;color:var(--gold-hi)}
+.why p{margin-top:8px;color:var(--on-dark-muted);font-size:.98rem}
+.motto{margin-top:38px;font:italic 400 clamp(1.3rem,2.6vw,1.9rem)/1.3 var(--serif);color:var(--gold-hi);max-width:34ch}
+.gsc-id{margin-top:10px;font-size:.92rem;color:var(--on-dark-muted)}
+
+/* tarifs */
+.offers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:40px}
+.offer{border:1px solid var(--line);border-radius:var(--radius);padding:30px;background:var(--bg);display:flex;flex-direction:column}
+.offer h3{font-size:1.5rem}
+.price{margin-top:14px;font:700 1.6rem/1.15 var(--serif);color:var(--gold-ink)}
+.dates{margin-top:6px;font-size:.95rem;color:var(--muted)}
+.offer ul{margin:18px 0 24px}
+.offer li{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:.97rem}
+.offer li svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--gold-ink)}
+.offer .btn{margin-top:auto}
+.pricing-note{margin-top:22px;color:var(--muted);max-width:70ch}
+
+/* FAQ */
+.faq{margin-top:36px;max-width:820px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font:600 1.12rem/1.35 var(--serif);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:16px;font:400 1.8rem/1 var(--sans);color:var(--gold-ink);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;color:var(--muted);max-width:66ch}
+
+/* appel final */
+.final{text-align:left}
+.final h2{font-size:clamp(2rem,4.4vw,3.4rem);max-width:20ch}
+.final .cta-row{margin-top:30px}
+.contact{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:38px;padding-top:26px;border-top:1px solid var(--dark-line);font-size:.98rem}
+.contact div{display:flex;flex-direction:column}
+.contact small{color:var(--on-dark-muted);font-size:.82rem}
+.contact a{text-decoration:none;font-weight:600;color:var(--on-dark)}
+.contact a:hover{color:var(--gold-hi)}
+
+/* pied de page */
+.footer{background:var(--dark-deep);color:var(--on-dark-muted);padding-block:34px;font-size:.9rem}
+.footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+.footer b{color:var(--on-dark);font-weight:600}
+
+/* barre d'inscription mobile */
+.sticky-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--dark);border-top:1px solid var(--dark-line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+.sticky-cta .btn{width:100%;min-height:50px}
+
+/* ----- adaptation ----- */
+@media (max-width:1020px){
+  .nav a:not(.btn){display:none}
+  .menu-btn{display:inline-block}
+  .site-header.open .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:flex-start;gap:0;background:var(--dark);border-bottom:1px solid var(--dark-line);padding:8px clamp(20px,4vw,40px) 18px}
+  .site-header.open .nav a:not(.btn){display:block;padding:12px 0;font-size:1.05rem;width:100%;border-top:1px solid var(--dark-line)}
+  .site-header.open .nav .btn{margin-top:12px}
+  .nav{gap:14px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero h1{max-width:18ch}
+  .split,.tools,.awa{grid-template-columns:1fr}
+  .split-head{position:static}
+  .phases{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .phase:nth-child(3){padding-left:0;border-left:0}
+  .phase:nth-child(n+3){border-top:1px solid var(--dark-line);margin-top:8px}
+  .stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .stat:nth-child(4){border-left:0}
+  .stat:nth-child(n+4){border-top:1px solid var(--dark-line)}
+  .path{grid-template-columns:1fr;gap:26px}
+  .path li{padding:0 0 0 58px}
+  .path li::after{left:19px;right:auto;top:44px;width:2px;height:calc(100% + 4px)}
+}
+@media (max-width:760px){
+  body{font-size:1rem}
+  .formats,.offers,.who,.why{grid-template-columns:1fr}
+  .ticks{grid-template-columns:1fr}
+  .mod{grid-template-columns:44px minmax(0,1fr);}
+  .mod-n{font-size:1.5rem}
+  .mod-m{grid-column:2;flex-direction:row;gap:14px;align-items:baseline}
+  .phases{grid-template-columns:1fr}
+  .phase + .phase{padding-left:0;border-left:0;border-top:1px solid var(--dark-line);margin-top:8px}
+  .sticky-cta.show{display:block}
+  .footer{padding-bottom:calc(34px + 72px)}
+  .logo-text small{display:none}
+  .nav .btn{display:none}
+  .site-header.open .nav .btn{display:inline-flex}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5.05-1.6A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.2-3 .95.98-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 4.9 4.4 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4l-2-1c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5 9.5 18 20 6.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 9.5h17M9.5 9.5V20" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-header" id="haut">
+  <div class="wrap bar">
+    <a class="logo" href="#haut" aria-label="GSC Business Center, retour en haut">
+      <span class="logo-mark">GSC</span>
+      <span class="logo-text">Business Center<small>Global Service Consulting</small></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#programme">Programme</a>
+      <a href="#methode">Méthode</a>
+      <a href="#outils">Outils</a>
+      <a href="#formats">Formats</a>
+      <a href="#certification">Certification</a>
+      <a href="#faq">Questions</a>
+      <a class="btn btn-gold" data-wa="general" href="https://wa.me/221788228416" target="_blank" rel="noopener">S’inscrire</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ================= HÉROS ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-kicker">Programme de formation certifiante</p>
+      <h1>Arrêtez de subir votre entreprise. Apprenez à la diriger.</h1>
+      <p class="lead">Le programme <strong>Entrepreneur / Propriétaire de petite entreprise</strong> de GSC Business Center : 16 modules, une méthode en 10 étapes et des outils prêts à l’emploi pour structurer, vendre, financer et faire grandir votre activité, en présentiel ou à distance.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" data-wa="general" href="https://wa.me/221788228416" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg>Je m’inscris sur WhatsApp
+        </a>
+        <a class="btn btn-line" href="https://calendly.com/consulting-globalservice/30min" target="_blank" rel="noopener">Réserver un échange de 30 minutes</a>
+      </div>
+      <p class="fine">Un message suffit pour recevoir le programme détaillé, les tarifs et les prochaines dates.</p>
+      <ul class="ticks">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Méthode GSC en 10 étapes</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Cas pratiques en FCFA</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Présentiel ou à distance</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Certification GSC</li>
+      </ul>
+    </div>
+
+    <figure class="board" aria-label="Exemple de tableau de bord construit pendant le programme">
+      <figcaption class="board-head"><b>Tableau de bord</b><span>Saveurs du Sénégal, décembre 2026</span></figcaption>
+      <div class="brow" style="--d:.25s"><div><span class="lab">Entreprises clientes</span><small>Cible : 20</small></div><span class="val">22</span><span class="pill ok">Atteint</span></div>
+      <div class="brow" style="--d:.5s"><div><span class="lab">Chiffre d’affaires du mois</span><small>Cible : 750 000 FCFA</small></div><span class="val">780 000</span><span class="pill ok">Atteint</span></div>
+      <div class="brow" style="--d:.75s"><div><span class="lab">Livraisons à l’heure</span><small>Cible : 95 %</small></div><span class="val">92 %</span><span class="pill warn">À surveiller</span></div>
+      <div class="brow" style="--d:1s"><div><span class="lab">Trésorerie disponible</span><small>Seuil d’alerte : 200 000 FCFA</small></div><span class="val">180 000</span><span class="pill warn">À surveiller</span></div>
+      <p class="board-note">Extrait du module 6. Cas pratique fictif : vous construisez le même tableau pour votre propre entreprise.</p>
+    </figure>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat"><strong>16</strong><span>modules</span></div>
+        <div class="stat"><strong>124</strong><span>vidéos</span></div>
+        <div class="stat"><strong>19 h</strong><span>de contenu</span></div>
+        <div class="stat"><strong>50</strong><span>livrables concrets</span></div>
+        <div class="stat"><strong>11</strong><span>outils Excel</span></div>
+        <div class="stat"><strong>1</strong><span>soutenance devant jury</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONSTATS ================= -->
+<section class="section" id="constat">
+  <div class="wrap split">
+    <div class="split-head">
+      <h2 class="h2">Vous dirigez déjà. Il vous manque une méthode.</h2>
+      <p class="sub">Vous travaillez dur, vous connaissez votre métier. Mais entre les urgences du jour et les décisions à prendre seul(e), il est difficile de savoir où vous en êtes vraiment.</p>
+    </div>
+    <div>
+      <ul class="pains">
+        <li>« Je travaille sans compter, mais je ne sais pas ce que je gagne vraiment. »</li>
+        <li>« Mes prix, je les fixe au feeling. »</li>
+        <li>« L’argent de l’entreprise et le mien se mélangent. »</li>
+        <li>« Mes clients viennent du bouche-à-oreille. Et si cela s’arrête ? »</li>
+        <li>« Je fais tout moi-même : je n’arrive ni à déléguer ni à recruter. »</li>
+        <li>« On me demande un plan d’affaires, et je ne sais pas par où commencer. »</li>
+      </ul>
+      <p class="pivot"><strong>Ce n’est pas un problème de motivation. C’est un problème de méthode.</strong> Et une méthode, cela s’apprend, étape par étape, avec vos propres chiffres.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÉTHODE ================= -->
+<section class="section s-dark" id="methode">
+  <div class="wrap">
+    <h2 class="h2">Une méthode, un chemin : de l’idée à la liberté entrepreneuriale</h2>
+    <p class="sub">La Méthode GSC en 10 étapes est la colonne vertébrale du programme. Chaque module en met une ou plusieurs en pratique.</p>
+    <div class="phases">
+      <div class="phase">
+        <h3>Fondations</h3><p>Poser les bases solides</p>
+        <ol class="steps">
+          <li><b>1</b>Clarification du projet</li>
+          <li><b>2</b>Validation du marché</li>
+          <li><b>3</b>Structuration du business</li>
+        </ol>
+      </div>
+      <div class="phase">
+        <h3>Positionnement et vente</h3><p>Se démarquer et convaincre</p>
+        <ol class="steps" start="4">
+          <li><b>4</b>Positionnement et marque</li>
+          <li><b>5</b>Acquisition client</li>
+          <li><b>6</b>Conversion et vente</li>
+        </ol>
+      </div>
+      <div class="phase">
+        <h3>Exécution</h3><p>Livrer et s’organiser</p>
+        <ol class="steps" start="7">
+          <li><b>7</b>Livraison et satisfaction</li>
+          <li><b>8</b>Automatisation et système</li>
+        </ol>
+      </div>
+      <div class="phase">
+        <h3>Management stratégique</h3><p>Grandir et prendre de la hauteur</p>
+        <ol class="steps" start="9">
+          <li><b>9</b>Développement et croissance</li>
+          <li><b>10</b>Impact et liberté</li>
+        </ol>
+      </div>
+    </div>
+    <p class="method-note"><strong>Ce n’est pas une théorie de plus.</strong> C’est la méthode que GSC Business Center applique elle-même pour construire et développer son propre cabinet, vécue, testée et ajustée avant d’être enseignée.</p>
+  </div>
+</section>
+
+<!-- ================= PROGRAMME ================= -->
+<section class="section" id="programme">
+  <div class="wrap">
+    <h2 class="h2">16 modules pour diriger votre entreprise de A à Z</h2>
+    <p class="sub">Chaque module se termine par des livrables concrets, validés, et un quiz. À la fin, vous ne repartez pas avec des notes : vous repartez avec votre entreprise mieux organisée.</p>
+
+    <div class="bloc">
+      <div class="bloc-head"><h3>Poser les bases</h3><p>Vous, votre idée, votre temps.</p></div>
+      <article class="mod"><div class="mod-n">01</div><div><h4>Les fondamentaux de l’entrepreneuriat</h4><p>Un autodiagnostic de votre profil d’entrepreneur, une idée testée et validée, et le réflexe du test avant l’investissement.</p></div><div class="mod-m"><b>7 vidéos</b><span>56 min</span></div></article>
+      <article class="mod"><div class="mod-n">02</div><div><h4>Développement personnel de l’entrepreneur</h4><p>Une semaine sous contrôle, une méthode pour décider, vos finances personnelles séparées de celles de l’entreprise, et votre réseau.</p></div><div class="mod-m"><b>7 vidéos</b><span>1 h</span></div></article>
+    </div>
+
+    <div class="bloc">
+      <div class="bloc-head"><h3>Comprendre son marché et piloter</h3><p>Un marché compris, une stratégie claire, un projet suivi.</p></div>
+      <article class="mod"><div class="mod-n">03</div><div><h4>Business model et étude de marché</h4><p>Votre Business Model Canvas, votre persona, l’analyse de vos concurrents et une enquête menée sur le terrain.</p></div><div class="mod-m"><b>8 vidéos</b><span>1 h 08</span></div></article>
+      <article class="mod"><div class="mod-n">04</div><div><h4>La planification stratégique</h4><p>Votre diagnostic, votre analyse SWOT, votre vision, des objectifs SMART et un plan d’action sur 12 mois.</p></div><div class="mod-m"><b>8 vidéos</b><span>1 h 15</span></div></article>
+      <article class="mod"><div class="mod-n">05</div><div><h4>Management de projet : cadrage et planification</h4><p>Une charte de projet, un découpage en tâches, un diagramme de Gantt sur Excel, le chemin critique, la matrice des rôles et un budget.</p></div><div class="mod-m"><b>13 vidéos</b><span>2 h 05</span></div></article>
+      <article class="mod"><div class="mod-n">06</div><div><h4>Pilotage, suivi et gestion des risques</h4><p>Un tableau de bord d’une page, un registre des risques avec plans de secours, des réunions de suivi qui décident.</p></div><div class="mod-m"><b>7 vidéos</b><span>1 h</span></div></article>
+    </div>
+
+    <div class="bloc">
+      <div class="bloc-head"><h3>Conquérir et garder vos clients</h3><p>Une offre, une vente, une présence en ligne.</p></div>
+      <article class="mod"><div class="mod-n">07</div><div><h4>Marketing et construction de l’offre</h4><p>Une gamme et un emballage cohérents, un prix calculé, une marque forte avec peu de moyens, vos canaux et un calendrier marketing.</p></div><div class="mod-m"><b>7 vidéos</b><span>1 h</span></div></article>
+      <article class="mod"><div class="mod-n">08</div><div><h4>Vente, négociation et relation client</h4><p>Un fichier de prospects, un entretien de vente maîtrisé, les objections traitées, une négociation qui protège votre marge, un devis.</p></div><div class="mod-m"><b>9 vidéos</b><span>1 h 25</span></div></article>
+      <article class="mod"><div class="mod-n">09</div><div><h4>Marketing digital et réseaux sociaux</h4><p>WhatsApp Business de A à Z, Facebook, Instagram et TikTok, une publicité à petit budget, la vente en ligne payée par mobile money.</p></div><div class="mod-m"><b>9 vidéos</b><span>1 h 32</span></div></article>
+    </div>
+
+    <div class="bloc">
+      <div class="bloc-head"><h3>Maîtriser les chiffres, le droit et les opérations</h3><p>Savoir ce que vous gagnez, être en règle, produire sans gaspiller.</p></div>
+      <article class="mod"><div class="mod-n">10</div><div><h4>Gestion financière et trésorerie</h4><p>Votre coût de revient, un compte de résultat prévisionnel, un plan de trésorerie et votre seuil de rentabilité.</p></div><div class="mod-m"><b>8 vidéos</b><span>1 h 15</span></div></article>
+      <article class="mod"><div class="mod-n">11</div><div><h4>Comptabilité simplifiée et fiscalité</h4><p>Des pièces classées, des journaux de caisse, de mobile money et de banque, un bilan lisible, le cadre OHADA, vos obligations fiscales et sociales.</p></div><div class="mod-m"><b>9 vidéos</b><span>1 h 35</span></div></article>
+      <article class="mod"><div class="mod-n">12</div><div><h4>Cadre juridique et formalisation</h4><p>Votre forme juridique, vos contrats, vos assurances, la protection de votre marque et une méthode pour récupérer vos impayés.</p></div><div class="mod-m"><b>7 vidéos</b><span>58 min</span></div></article>
+      <article class="mod"><div class="mod-n">13</div><div><h4>Gestion des opérations : achats, stocks et qualité</h4><p>Vos processus décrits, vos fournisseurs évalués, vos stocks maîtrisés, un inventaire et une traçabilité par lot.</p></div><div class="mod-m"><b>7 vidéos</b><span>1 h 05</span></div></article>
+    </div>
+
+    <div class="bloc">
+      <div class="bloc-head"><h3>Diriger, grandir, obtenir votre certification</h3><p>Une équipe, un financement, un plan d’affaires défendu.</p></div>
+      <article class="mod"><div class="mod-n">14</div><div><h4>Ressources humaines et leadership</h4><p>Votre style de direction, un recrutement structuré, le contrat et le bulletin de paie, la délégation, les conflits et les évaluations.</p></div><div class="mod-m"><b>8 vidéos</b><span>1 h 13</span></div></article>
+      <article class="mod"><div class="mod-n">15</div><div><h4>Croissance, financement et partenariats</h4><p>Une stratégie de croissance, un test de préparation, un plan de financement, un dossier solide et un pitch de 5 minutes.</p></div><div class="mod-m"><b>7 vidéos</b><span>1 h 07</span></div></article>
+      <article class="mod"><div class="mod-n">16</div><div><h4>Projet de certification : plan d’affaires et soutenance</h4><p>Votre plan d’affaires en 12 chapitres, un résumé qui convainc et une soutenance devant un jury.</p></div><div class="mod-m"><b>3 vidéos</b><span>26 min</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUTILS ================= -->
+<section class="section s-surface" id="outils">
+  <div class="wrap tools">
+    <div>
+      <h2 class="h2">Des outils que vous utilisez dès la première semaine</h2>
+      <p class="sub">Pas seulement des vidéos : chaque module fournit des fiches à remplir et, quand c’est utile, un classeur Excel avec un exemple déjà rempli et une version vierge pour vos propres chiffres.</p>
+      <ul class="toollist">
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Diagramme de Gantt</b> <span>dates calculées, chemin critique, jalons</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Tableau de bord mensuel</b> <span>indicateurs, feux verts, orange, rouges</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Calculateur de prix et de seuil de rentabilité</b></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Suivi commercial et devis</b> <span>entonnoir de prospection inclus</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Calendrier de contenu et rentabilité publicitaire</b></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Prévisionnel financier</b> <span>résultat, trésorerie, seuil, budget de projet</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Journaux de caisse, mobile money et banque</b> <span>avec rapprochement</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Gestion des stocks, inventaire et pertes</b></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Équipe, recrutement et délégation</b></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Croissance et financement</b> <span>test de préparation, capacité de remboursement</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-tool"/></svg><div><b>Contrôle de cohérence de votre plan d’affaires</b></div></li>
+      </ul>
+      <p class="templates">S’y ajoutent des dizaines de modèles prêts à remplir : fiche de poste, lettres de relance, convention de partenariat, trame de pitch, grille d’entretien.</p>
+    </div>
+    <figure class="figure">
+      <svg viewBox="0 0 490 300" role="img" aria-labelledby="gantt-t gantt-d" class="gantt">
+<title id="gantt-t">Extrait du diagramme de Gantt du projet Atelier</title>
+<desc id="gantt-d">Onze tâches sur 42 jours ouvrés. Les tâches du chemin critique sont en rouge : T1, T4, T5, T8, T9, T11, T12 et T14.</desc>
+<line x1="44" y1="26" x2="44" y2="280" class="g-grid"/>
+<text x="44" y="18" class="g-tick" text-anchor="middle">j0</text>
+<line x1="144" y1="26" x2="144" y2="280" class="g-grid"/>
+<text x="144" y="18" class="g-tick" text-anchor="middle">j10</text>
+<line x1="244" y1="26" x2="244" y2="280" class="g-grid"/>
+<text x="244" y="18" class="g-tick" text-anchor="middle">j20</text>
+<line x1="344" y1="26" x2="344" y2="280" class="g-grid"/>
+<text x="344" y="18" class="g-tick" text-anchor="middle">j30</text>
+<line x1="444" y1="26" x2="444" y2="280" class="g-grid"/>
+<text x="444" y="18" class="g-tick" text-anchor="middle">j40</text>
+<text x="6" y="50" class="g-lab">T1</text>
+<rect x="44" y="38" width="20" height="15" rx="4" class="g-crit"/>
+<text x="6" y="72" class="g-lab">T2</text>
+<rect x="64" y="60" width="100" height="15" rx="4" class="g-bar"/>
+<text x="6" y="94" class="g-lab">T3</text>
+<rect x="164" y="82" width="30" height="15" rx="4" class="g-bar"/>
+<text x="6" y="116" class="g-lab">T4</text>
+<rect x="64" y="104" width="50" height="15" rx="4" class="g-crit"/>
+<text x="6" y="138" class="g-lab">T5</text>
+<rect x="114" y="126" width="150" height="15" rx="4" class="g-crit"/>
+<text x="6" y="160" class="g-lab">T6</text>
+<rect x="194" y="148" width="50" height="15" rx="4" class="g-bar"/>
+<text x="6" y="182" class="g-lab">T8</text>
+<rect x="264" y="170" width="30" height="15" rx="4" class="g-crit"/>
+<text x="6" y="204" class="g-lab">T9</text>
+<rect x="294" y="192" width="30" height="15" rx="4" class="g-crit"/>
+<text x="6" y="226" class="g-lab">T11</text>
+<rect x="324" y="214" width="40" height="15" rx="4" class="g-crit"/>
+<text x="6" y="248" class="g-lab">T12</text>
+<rect x="364" y="236" width="50" height="15" rx="4" class="g-crit"/>
+<text x="6" y="270" class="g-lab">T14</text>
+<rect x="414" y="258" width="50" height="15" rx="4" class="g-crit"/>
+</svg>
+      <div class="legend"><span><i style="background:var(--bad)"></i>Chemin critique</span><span><i style="background:var(--gantt)"></i>Autres tâches</span></div>
+      <figcaption>Extrait du diagramme de Gantt du module 5 : quelles tâches retardent tout le projet si elles glissent ? Vous le construisez avec vos propres dates.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= FIL ROUGE ================= -->
+<section class="section s-dark" id="awa">
+  <div class="wrap awa">
+    <div>
+      <h2 class="h2">Suivez Awa, de 100 bouteilles à un plan pour Dakar</h2>
+      <p class="sub">Tout au long des 16 modules, un même cas pratique relie la théorie à la réalité : une entrepreneure de la Petite-Côte qui vend du jus de bissap et de bouye, et qui apprend à diriger son entreprise.</p>
+      <span class="badge">Cas pratique fictif</span>
+      <p class="awa-note">Awa est un personnage fictif. Ses chiffres illustrent la méthode ; ils ne constituent pas une promesse de résultat.</p>
+    </div>
+    <ol class="timeline">
+      <li><b>Module 1</b><p>Elle teste son idée avant d’investir : 100 bouteilles proposées, <em>82 vendues, 41 000 FCFA</em>.</p></li>
+      <li><b>Module 3</b><p>Elle découvre que l’acheteur n’est pas le directeur mais son assistante, et le confirme par 20 entretiens.</p></li>
+      <li><b>Module 5</b><p>Elle prépare son atelier : 14 tâches, 42 jours, <em>748 000 FCFA</em> à financer.</p></li>
+      <li><b>Module 8</b><p>Elle décroche ses premiers hôtels sans vendre à perte.</p></li>
+      <li><b>Module 10</b><p>Elle calcule qu’il lui faut <em>772 bouteilles par mois</em> pour que sa nouvelle zone soit rentable.</p></li>
+      <li><b>Module 12</b><p>Elle passe en SARL et sécurise ses contrats.</p></li>
+      <li><b>Module 15</b><p>Elle prépare Dakar : <em>4 620 000 FCFA</em> à financer et un pitch de 5 minutes.</p></li>
+      <li><b>Module 16</b><p>Elle réunit tout dans un plan d’affaires et le défend devant un jury.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= FORMATS ================= -->
+<section class="section" id="formats">
+  <div class="wrap">
+    <h2 class="h2">En présentiel ou à distance : vous choisissez votre rythme</h2>
+    <p class="sub">Deux façons de suivre le même programme. Choisissez celle qui s’accorde avec votre emploi du temps et votre façon d’apprendre.</p>
+    <div class="formats">
+      <article class="format">
+        <h3>À distance</h3>
+        <p class="tag">Avancez à votre rythme, où que vous soyez</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vidéos à la demande sur la plateforme de formation GSC</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Guides, fiches et classeurs Excel à télécharger</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Un quiz à la fin de chaque module</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vos questions posées à l’équipe GSC sur WhatsApp</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Des rendez-vous avec un consultant</li>
+        </ul>
+      </article>
+      <article class="format">
+        <h3>En présentiel</h3>
+        <p class="tag">Avancez en groupe, avec un formateur</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Des sessions animées par les formateurs GSC</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Des mises en situation : vente, négociation, pitch</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Des échanges avec d’autres entrepreneurs de votre région</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Les mêmes outils, fiches et classeurs que la formule à distance</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Lieux et calendrier communiqués à l’inscription</li>
+        </ul>
+      </article>
+    </div>
+    <p class="same">Même programme, mêmes livrables, même certification, quelle que soit la formule.</p>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATION ================= -->
+<section class="section s-surface" id="certification">
+  <div class="wrap">
+    <h2 class="h2">Une certification qui prouve ce que vous savez faire</h2>
+    <p class="sub">Elle ne récompense pas la présence : elle valide un plan d’affaires réel, défendu à voix haute.</p>
+    <ol class="path">
+      <li><b>Suivre les 16 modules</b><span>Vidéos, fiches et quiz, à votre rythme.</span></li>
+      <li><b>Déposer vos livrables</b><span>Des documents concrets, relus et validés.</span></li>
+      <li><b>Écrire votre plan d’affaires</b><span>12 chapitres et un résumé qui convainc.</span></li>
+      <li><b>Défendre votre projet</b><span>Une soutenance devant un jury.</span></li>
+      <li><b>Recevoir votre certification</b><span>Délivrée par GSC Business Center.</span></li>
+    </ol>
+    <p class="cert-note">Le règlement de la certification (dates, composition du jury, barème, modalités de rattrapage) vous est communiqué à l’inscription.</p>
+  </div>
+</section>
+
+<!-- ================= POUR QUI ================= -->
+<section class="section" id="pourqui">
+  <div class="wrap">
+    <h2 class="h2">Ce programme est fait pour vous si…</h2>
+    <div class="who">
+      <div class="yes">
+        <h3>Il vous correspond</h3>
+        <ul class="list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vous dirigez une petite entreprise, formelle ou non, ou vous préparez de la lancer</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vous êtes commerçant, artisan, producteur, prestataire de services</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vous voulez des méthodes que vous appliquez à votre propre activité, avec vos propres chiffres</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vous êtes prêt(e) à consacrer du temps chaque semaine et à rendre des travaux</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vous souhaitez une certification qui atteste de votre parcours</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Il ne vous correspond pas</h3>
+        <ul class="list">
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg>Vous cherchez une solution miracle sans effort personnel</li>
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg>Vous voulez seulement regarder des vidéos, sans appliquer</li>
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg>Vous n’avez ni activité ni projet réel sur lequel travailler</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POURQUOI GSC ================= -->
+<section class="section s-dark" id="gsc">
+  <div class="wrap">
+    <h2 class="h2">Pourquoi se former avec GSC Business Center</h2>
+    <p class="sub">GSC (Global Service Consulting) est un cabinet de conseil et de formation basé à Mbour, Thiès et Dakar, qui accompagne les entrepreneurs et les petites entreprises du Sénégal.</p>
+    <div class="why">
+      <div><h3>Une méthode vécue, pas récitée</h3><p>Nous appliquons nous-mêmes la Méthode GSC pour construire notre propre cabinet. Ce que nous enseignons, nous l’avons éprouvé.</p></div>
+      <div><h3>Ancrée dans votre réalité</h3><p>Prix en FCFA, cadre OHADA, mobile money, WhatsApp Business, marchés de Mbour, Thiès et Dakar : les exemples vous parlent.</p></div>
+      <div><h3>Du concret à chaque module</h3><p>Des outils Excel, des modèles à remplir et des livrables réels. Vous construisez votre entreprise pendant que vous apprenez.</p></div>
+      <div><h3>Un accompagnement humain</h3><p>Des consultants qui répondent à vos questions et un échange de 30 minutes pour bien choisir avant de vous engager.</p></div>
+    </div>
+    <p class="motto">« De l’idée à la liberté entrepreneuriale, une méthode, un chemin. »</p>
+    <p class="gsc-id">GSC Business Center · Global Service Consulting</p>
+  </div>
+</section>
+
+<!-- ================= TARIFS ================= -->
+<section class="section s-surface" id="tarifs">
+  <div class="wrap">
+    <h2 class="h2">Choisissez votre formule</h2>
+    <p class="sub">Le contenu, les outils et la certification sont les mêmes. Seule change la manière de suivre le programme.</p>
+    <div class="offers">
+      <article class="offer">
+        <h3>Formule à distance</h3>
+        <p class="price" data-prix="distance">Tarif communiqué sur demande</p>
+        <p class="dates" data-dates="distance">Prochaines dates communiquées à l’inscription</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Les 16 modules en vidéo</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Fiches livrables et classeurs Excel</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Suivi par l’équipe GSC</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Soutenance et certification</li>
+        </ul>
+        <a class="btn btn-navy" data-wa="distance" href="https://wa.me/221788228416" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Recevoir le tarif à distance</a>
+      </article>
+      <article class="offer">
+        <h3>Formule en présentiel</h3>
+        <p class="price" data-prix="presentiel">Tarif communiqué sur demande</p>
+        <p class="dates" data-dates="presentiel">Prochaines dates communiquées à l’inscription</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Sessions animées par les formateurs GSC</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Mises en situation et échanges en groupe</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Fiches livrables et classeurs Excel</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Soutenance et certification</li>
+        </ul>
+        <a class="btn btn-navy" data-wa="presentiel" href="https://wa.me/221788228416" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Recevoir le tarif en présentiel</a>
+      </article>
+    </div>
+    <p class="pricing-note">Écrivez-nous : nous vous envoyons la grille tarifaire, les dates des prochaines sessions et les modalités de paiement. Vous pouvez aussi réserver un échange de 30 minutes pour choisir la formule qui vous convient.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <h2 class="h2">Vos questions avant de vous inscrire</h2>
+    <div class="faq">
+      <details><summary>Mon entreprise n’est pas encore formalisée. Puis-je m’inscrire ?</summary><p>Oui. Le programme s’adresse aussi aux porteurs de projet et aux activités informelles. Le module 12 explique comment se formaliser. Si vous n’avez pas encore d’activité, vous travaillez sur le projet le plus réaliste des deux prochaines années.</p></details>
+      <details><summary>Combien de temps faut-il y consacrer ?</summary><p>Chaque module se travaille en 2 à 4 semaines, avec un calendrier recommandé et des durées estimées par journée. Comptez plusieurs mois pour l’ensemble du parcours. Vous avancez à votre rythme, mais il faut du travail personnel : appliquer, remplir, rendre.</p></details>
+      <details><summary>Faut-il être à l’aise avec Excel ?</summary><p>Non. Chaque classeur contient un mode d’emploi, un exemple déjà rempli et une version vierge. Vous saisissez vos chiffres dans les cases jaunes ; les calculs se font seuls.</p></details>
+      <details><summary>Le programme parle-t-il de ma réalité ?</summary><p>Oui. Les exemples sont en FCFA et s’appuient sur le contexte sénégalais : cadre OHADA, mobile money, WhatsApp Business, clients de Mbour, Saly, Thiès et Dakar.</p></details>
+      <details><summary>Qu’est-ce que la certification, concrètement ?</summary><p>C’est la certification de GSC Business Center. Elle atteste que vous avez suivi le parcours, produit vos livrables et défendu votre plan d’affaires devant un jury. Le règlement complet vous est communiqué à l’inscription.</p></details>
+      <details><summary>Quelle est la différence entre présentiel et distance ?</summary><p>Le contenu, les outils, les livrables et la certification sont identiques. En présentiel, vous avancez en groupe avec un formateur. À distance, vous avancez à votre rythme avec le soutien de l’équipe GSC.</p></details>
+      <details><summary>Puis-je poser mes questions avant de m’engager ?</summary><p>Oui. Réservez un échange de 30 minutes avec un conseiller ou écrivez-nous sur WhatsApp : nous vous répondons et vous envoyons le programme détaillé.</p></details>
+      <details><summary>Comment m’inscrire ?</summary><p>Écrivez-nous sur WhatsApp au +221 78 822 84 16 en cliquant sur « Je m’inscris ». Nous vous envoyons les tarifs, les dates et la marche à suivre.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPEL FINAL ================= -->
+<section class="section s-dark final" id="inscription">
+  <div class="wrap">
+    <h2 class="h2">Votre entreprise a déjà du potentiel. Donnez-lui une méthode.</h2>
+    <p class="sub">Un message suffit pour recevoir le programme détaillé, les tarifs et les prochaines dates.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" data-wa="general" href="https://wa.me/221788228416" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Je m’inscris sur WhatsApp</a>
+      <a class="btn btn-line" href="https://calendly.com/consulting-globalservice/30min" target="_blank" rel="noopener">Réserver un échange de 30 minutes</a>
+    </div>
+    <div class="contact">
+      <div><small>WhatsApp</small><a href="https://wa.me/221788228416" target="_blank" rel="noopener">+221 78 822 84 16</a></div>
+      <div><small>E-mail</small><a href="mailto:consulting.globalservice@gmail.com">consulting.globalservice@gmail.com</a></div>
+      <div><small>Où nous trouver</small><span>Mbour, Thiès, Dakar (Sénégal)</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div><b>GSC Business Center</b> (Global Service Consulting)</div>
+    <div>Mbour, Thiès, Dakar, Sénégal</div>
+    <div>© 2026 GSC Business Center. Tous droits réservés.</div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky">
+  <a class="btn btn-gold" data-wa="general" href="https://wa.me/221788228416" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Je m’inscris sur WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var NUM = "221788228416";
+  var MESSAGES = {
+    general: "Bonjour GSC Business Center, je souhaite m'inscrire au programme de formation certifiante Entrepreneur / Propriétaire de petite entreprise. Pouvez-vous m'envoyer le programme détaillé, les tarifs et les prochaines dates ?",
+    distance: "Bonjour GSC Business Center, je suis intéressé(e) par la formule à distance du programme de formation certifiante Entrepreneur / Propriétaire de petite entreprise. Pouvez-vous m'envoyer le tarif, les dates et la marche à suivre ?",
+    presentiel: "Bonjour GSC Business Center, je suis intéressé(e) par la formule en présentiel du programme de formation certifiante Entrepreneur / Propriétaire de petite entreprise. Pouvez-vous m'envoyer le tarif, les dates, les lieux et la marche à suivre ?"
+  };
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    var m = MESSAGES[a.getAttribute("data-wa")] || MESSAGES.general;
+    a.href = "https://wa.me/" + NUM + "?text=" + encodeURIComponent(m);
+  });
+
+  /* Tarifs et dates : renseigner ici pour les afficher sur la page.
+     Laisser vide = « communiqué sur demande ». */
+  var OFFRES = {
+    distance:   { prix: "", dates: "" },
+    presentiel: { prix: "", dates: "" }
+  };
+  Object.keys(OFFRES).forEach(function(k){
+    var p = document.querySelector('[data-prix="' + k + '"]');
+    var d = document.querySelector('[data-dates="' + k + '"]');
+    if (p && OFFRES[k].prix)  p.textContent = OFFRES[k].prix;
+    if (d && OFFRES[k].dates) d.textContent = OFFRES[k].dates;
+  });
+
+  var header = document.querySelector(".site-header");
+  var btn = document.querySelector(".menu-btn");
+  btn.addEventListener("click", function(){
+    var open = header.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  document.querySelectorAll(".nav a").forEach(function(a){
+    a.addEventListener("click", function(){
+      header.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  var sticky = document.getElementById("sticky");
+  var final = document.getElementById("inscription");
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    var nearEnd = final && final.getBoundingClientRect().top < window.innerHeight * 0.85;
+    sticky.classList.toggle("show", y > 640 && !nearEnd);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
